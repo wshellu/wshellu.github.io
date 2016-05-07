@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IP 类型</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="IP 类型, network, IP computer, whsellu" />
+    <meta name="description" content="IP 类型, network, IP computer, C Developer" />
+    <meta name="theme-color" content="#2CA6CB"/>
+    <link rel="shortcut icon" type="image/x-icon" media="screen" href="http://wshellu.github.io/favicon.ico" />
+    <link rel="canonical" href="http://wshellu.github.io/example/2014-02-23-ip/" />
+    <link rel="alternate" type="application/rss+xml" title="whsellu" href="http://wshellu.github.io/feed.xml"  />
+
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://wshellu.github.io/static/octicons/octicons.css" />
+    <link rel="stylesheet" type="text/css" href="http://wshellu.github.io/static/css/style.css" />
+
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://wshellu.github.io/static/js/script.js"></script>
+</head>
+
+
+<body>
+<div class="main">
+
+    
+    
+    <header>
+        <nav class="navbar navbar-tiffany rectangle" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://wshellu.github.io/">whsellu</a>
+                    <p class="navbar-text">C Developer</p>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                        <a href="http://wshellu.github.io/" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp;Blog</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://wshellu.github.io/archive/" class="word-keep"><span class="octicon octicon-repo"></span>&nbsp;&nbsp;Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="http://wshellu.github.io/category/" class="word-keep"><span class="octicon octicon-list-unordered"></span>&nbsp;&nbsp;Category</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="http://wshellu.github.io/tags/" class="word-keep"><span class="octicon octicon-tag"></span>&nbsp;&nbsp;Tag</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="#stq=" class="search-button"><span class="octicon octicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="http://wshellu.github.io/static/css/highlight.css" />
+<link rel="stylesheet" type="text/css" href="http://wshellu.github.io/static/css/post.css" />
+<script type="text/javascript" src="http://wshellu.github.io/static/js/post.js"></script>
+<script type="text/javascript" src="http://wshellu.github.io/static/js/toc.js"></script>
+<div class="row">
+    <div class="content col-lg-9">
+        <div class="sheet post">
+          <header>
+            <h2>IP 类型</h2>
+            <p class="post-meta">
+                <span class="octicon octicon-clock"></span> 
+            </p>
+            <p class="post-tag">
+                <span><a href="http://wshellu.github.io/category/#network"><span class="octicon octicon-list-unordered"></span>&nbsp;network</a></span>
+                <span>
+                    <a class="word-keep" href="http://wshellu.github.io/tags/#IP computer"><span class="octicon octicon-tag"></span>&nbsp;IP computer</a>
+                    
+                </span>
+            </p>
+          </header>
+          <hr class="boundary">
+          <article>
+            <p>#分类</p>
+
+<p><img src="http://wshellu.github.io/static/img/ip.jpg" alt="ip" /></p>
+
+<p>IP通过地址开头判断类型，将以 <code class="highlighter-rouge">0</code>，<code class="highlighter-rouge">10</code>，<code class="highlighter-rouge">110</code> 开头的地址分为ABC三类</p>
+
+<p>将ip转换成十进制后</p>
+
+<p>A类地址第一个字节在 <code class="highlighter-rouge">0 - 127</code> 之间，</p>
+
+<p>B类地址第一个字节在 <code class="highlighter-rouge">128 - 191</code> 之间</p>
+
+<p>C类地址第一个字节在 <code class="highlighter-rouge">192 - 223</code> 之间</p>
+
+<p>然后剩下的位被分为网络号与主机号，主机有两个特殊的值：</p>
+
+<p>主机号全部为<code class="highlighter-rouge">0</code>的ip代表一个网段</p>
+
+<p>主机号全部为<code class="highlighter-rouge">1</code>的ip代表广播地址，应用程序可以通过这个ip将信息发送到该网段下的所有主机</p>
+
+<p>#子网掩码</p>
+
+<p>IP寻址时还需用到子网掩码，子网掩码与IP等长，由连续的1组成</p>
+
+<p>ip中被子网掩码掩去（对ip进行与运算）的部分将被视为网络号，剩余部分将被视为主机号</p>
+
+<p>如需要划分5个子网，其二进制为<code class="highlighter-rouge">101</code>，这将在ip中占去<code class="highlighter-rouge">3</code>位，3位可以划分出6（<code class="highlighter-rouge">2 ^ 3 - 2</code>）个子网满足5个子网的要求</p>
+
+<p>一个byte中占去前3位后为<code class="highlighter-rouge">11100000</code>，该子网掩码十进制为<code class="highlighter-rouge">224</code></p>
+
+<p>#私有地址</p>
+
+<p>tcp/ip协议中，专门保留了三个IP地址区域作为私有地址，其地址范围如下：</p>
+
+<p>10.0.0.0/8：10.0.0.0～10.255.255.255</p>
+
+<p>172.16.0.0/12：172.16.0.0～172.31.255.255</p>
+
+<p>192.168.0.0/16：192.168.0.0～192.168.255.255</p>
+
+<p>ip后面的斜线和数字，表示ip的中网络号所占的位数</p>
+
+<p>例如172.16.0.0/12表示将前12位全部作为网络号，效果等同于子网掩码 255.240.0.0</p>
+
+
+          </article>
+          <hr class="boundary">
+          <div id="post-share" class="bdsharebuttonbox">
+              <a href="#" class="bds_more" data-cmd="more"></a>
+              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+              <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+              <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+              <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+          </div>
+        </div>
+        <div class="pad-min"></div>
+        <div id="post-comment" class="sheet post">
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+    <div class="content-navigation col-lg-3">
+      <div class="shadow-bottom-center" >
+        <div class="content-navigation-toc">
+            <div class="content-navigation-header">
+                <span class="octicon octicon-list-unordered"></span>&nbsp;Toc
+            </div>
+            <div class="content-navigation-list toc"></div>
+        </div>
+        <div class="content-navigation-tag">
+            <div class="content-navigation-header">
+                <span class="octicon octicon-list-unordered"></span>&nbsp;Tags
+            </div>
+            <div class="content-navigation-list">
+                <ul>
+                    
+                    <li>
+                        <a href="http://wshellu.github.io/tags#IP computer"><span class="octicon octicon-tag"></span>&nbsp;IP computer</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="content-navigation-related">
+            <div class="content-navigation-header">
+                <span class="octicon octicon-list-unordered"></span>&nbsp;Related
+            </div>
+            <div class="content-navigation-list">
+                <ul>
+                    
+
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+    </div>
+
+    <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="Top">
+        <a href="javascript:void(0);">
+            <div class="arrow"></div>
+            <div class="stick"></div>
+        </a>
+    </div>
+</div>
+
+    <footer  class="footnote footnote-tiffany">
+        <div class="container">
+                <a class="foot-item" href="mailto:wshell84@gmail.com" target="_blank"><span class="octicon octicon-mail"></span></a>
+                <a class="foot-item" href="https://github.com/wshellu" target="_blank"><span class="octicon octicon-mark-github"></span></a>
+                <a class="foot-item" href="http://wshellu.github.io/feed.xml" target="_blank"><span class="octicon octicon-rss"></span></a>
+                <a class="foot-item" href="http://wshellu.github.io/link/"><span class="octicon octicon-link-external"></span></a>
+                &nbsp;
+                <a href="http://wshellu.github.io/"><span class="word-keep">&copy; wshellu</span></a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
